@@ -1,5 +1,6 @@
 data <- read.csv("datasets/dataset-ibm.csv", header = TRUE)
 head(data)
+summary(data)
 
 data$Date <- as.numeric(as.Date(data$Date, "%Y-%m-%d"))
 
